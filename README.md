@@ -1,7 +1,5 @@
 # wildlife_detection_system
 
-# Wildlife Detection System
-
 ## Overview
 
 This web application detects wildlife animals from uploaded images using Amazon Rekognition.
