@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Wildlife Animal Detection</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+<div class="logo">
+
+<i class="fa-solid fa-paw"></i>
+
+WildLife AI
+
+</div>
+
+<ul>
+
+<li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+
+<li><a href="history.html"><i class="fa-solid fa-clock-rotate-left"></i> History</a></li>
+
+<li><a href="dashboard.html"><i class="fa-solid fa-chart-column"></i> Dashboard</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+<h1>
+
+Wildlife Animal Detection System
+
+</h1>
+
+<p>
+
+Upload an image of wildlife and let Amazon Rekognition identify
+the animals, count them automatically and store the results in AWS.
+
+</p>
+
+</section>
+
+<!-- ================= MAIN ================= -->
+
+<section class="main-container">
+
+<div class="upload-card">
+
+<h2>
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+Upload Animal Image
+
+</h2>
+
+<div id="dropArea">
+
+<input type="file"
+
+id="imageInput"
+
+accept="image/*"
+
+hidden>
+
+<label for="imageInput">
+
+<i class="fa-solid fa-image"></i>
+
+<h3>
+
+Choose or Drag Image
+
+</h3>
+
+<p>
+
+Supports JPG PNG WEBP
+
+</p>
+
+</label>
+
+</div>
+
+<button id="uploadBtn">
+
+<i class="fa-solid fa-upload"></i>
+
+Upload & Detect
+
+</button>
+
+</div>
+
+<div class="preview-card">
+
+<h2>
+
+Preview
+
+</h2>
+
+<img
+
+id="preview"
+
+src=""
+
+alt="Preview">
+
+</div>
+
+</section>
+
+<!-- ================= LOADING ================= -->
+
+<section id="loading">
+
+<div class="loader"></div>
+
+<h2>
+
+Analyzing Wildlife...
+
+</h2>
+
+</section>
+
+<!-- ================= RESULT ================= -->
+
+<section id="results">
+
+<h1>
+
+Detection Result
+
+</h1>
+
+<div class="summary">
+
+<div class="summary-card">
+
+<h3>
+
+Animals Found
+
+</h3>
+
+<p id="animalCount">
+
+0
+
+</p>
+
+</div>
+
+<div class="summary-card">
+
+<h3>
+
+Image
+
+</h3>
+
+<p id="imageName">
+
+-
+
+</p>
+
+</div>
+
+</div>
+
+<div id="animalCards"
+
+class="cards">
+
+<!-- JS -->
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<h3>
+
+Wildlife Animal Detection System
+
+</h3>
+
+<p>
+
+AWS S3 • API Gateway • Lambda • Rekognition • DynamoDB • CloudWatch
+
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
